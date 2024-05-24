@@ -7,7 +7,7 @@ import wgan
 
 def main():
     # Set the working directory to the location of the WGAN code and dataset
-    os.chdir('Z:/User/Desktop/DLM/torch/ds-wgan-master')
+    os.chdir('/final/macs30123/DLM/torch/ds-wgan-master')
 
     # Load and preprocess the data
     data = pd.read_csv('Xorigin.csv')  # Load the dataset containing various variables
