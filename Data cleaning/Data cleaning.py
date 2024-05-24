@@ -23,6 +23,18 @@ df = df[
     (df['hispan'] != 901) & (df['hispan'] != 902)
 ]
 
+# Rename variables
+df = df.rename(columns={'ind': 'nextSect', 'indly': 'sect', 'rinc': 'wage'})
+
+# Calculate mean wage by year for normalization
+mean_wage = df.groupby('year')['wage'].mean().compute()
+mean_wage.name = 'meanwage'
+
+# Merge mean wage back to the main DataFrame and normalize
+df = df.merge(mean_wage.to_frame(), on='year', how='left')
+df['wage'] = df['wage'] / df['meanwage']
+df = df.drop(columns=['meanwage'])  # Clean up after normalization
+
 # Efficient recoding using dictionary mappings
 map_sex = {1: 0, 2: 1}
 map_marst = {1: 'married', 2: 'married', 3: 'unmarried', 7: 'unmarried'}
@@ -32,32 +44,10 @@ df['marst'] = df['marst'].map(map_marst)
 df['citizen'] = df['citizen'].map(map_citizen)
 
 # Simplifying the complex mapping of 'bpl'
-def recode_bpl(x):
-    if 9900 <= x <= 12090:
-        return 1
-    elif 15000 <= x <= 31000:
-        return 2
-    elif 40000 <= x <= 49900:
-        return 3
-    elif 50000 <= x <= 59900:
-        return 4
-    elif 60010 <= x <= 96000:
-        return 5
-    else:
-        return x
-
-df['bpl'] = df['bpl'].map(recode_bpl)
+df['bpl'] = df['bpl'].map(lambda x: 1 if 9900 <= x <= 12090 else 2 if 15000 <= x <= 31000 else 3 if 40000 <= x <= 49900 else 4 if 50000 <= x <= 59900 else 5 if 60010 <= x <= 96000 else x)
 
 # Recoding 'hispan' more efficiently
-def recode_hispan(x):
-    if x == 0:
-        return 'Not Hispanic'
-    elif 100 <= x <= 612:
-        return 'Hispanic'
-    else:
-        return x
-
-df['hispan'] = df['hispan'].map(recode_hispan)
+df['hispan'] = df['hispan'].map(lambda x: 'Not Hispanic' if x == 0 else 'Hispanic' if 100 <= x <= 612 else x)
 
 # Applying conditions for employment based on existing columns
 df['employd'] = df.apply(lambda row: (row['empstat'] == 10) and row['classwkr'].between(20, 28) and (row['ahrsworkt'].between(35, 99) or (row['usftptlw'] == 2)), axis=1)
