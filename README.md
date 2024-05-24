@@ -26,10 +26,10 @@ Our data procession includes preparing a sample with consistent individuals from
 - Using the Dask framework to clean millions of data points: [Data cleaning](https://github.com/hchen0628/MACS30123-final/blob/main/Data%20cleaning/Data%20cleaning.py)
 
 - Generate counterfactual data using real-world datasets
-  - WGANs framwork for training and generating data from conditional and joint distributions for the simulation. (Author: Jonas Metzger and Evan Munro): [wgan.py](https://github.com/hchen0628/MACS30123-final/blob/main/WGAN/wgan.py)
+  - WGANs framwork for training and generating data from conditional and joint distributions for the simulation (Author: Jonas Metzger and Evan Munro). We have made some modifications to the framework to suit our purposes: [wgan.py](https://github.com/hchen0628/MACS30123-final/blob/main/WGAN/wgan.py)
   - Training the WGAN model and generating counterfactual data with optimized hyperparameters and configurations: [WGAN_trial_v4_tune.py](https://github.com/hchen0628/MACS30123-final/blob/main/WGAN/WGAN_trial_v4_tune_May.py)
 
 - Data visualization/Results: [Data visualization](https://github.com/hchen0628/MACS30123-final/tree/main/Data%20visualization)
 
 # Data
-Real world data be found at [Microdata Series Current Population Survey dataset](https://cps.ipums.org/cps/), the simulated dataset could be found at [Simulated dataset]().
+Real world data be found at [Original data](https://drive.google.com/file/d/16A-EKDjXLNHRTqNa1Tb_gmjdt4TRncO-/view?usp=sharing), the simulated dataset could be found at [Simulated dataset]().
