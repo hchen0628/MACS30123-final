@@ -32,7 +32,8 @@ Our data procession includes preparing a sample with consistent individuals from
 - Data visualization/Results: [Data visualization](https://github.com/hchen0628/MACS30123-final/tree/main/Data%20visualization)
 
 # Data
-Real world data be found at [Original data](https://drive.google.com/file/d/1ABMhgceRVIRWsua5mO-dwZEj40-XO1dM/view?usp=sharing), the simulated dataset could be found at [Simulated dataset](https://drive.google.com/file/d/1E_vrYJZMv2-teYR8z4ytU55z4dcNgJRV/view?usp=drive_link).
+Real world data be found at [Original data](https://drive.google.com/file/d/1ABMhgceRVIRWsua5mO-dwZEj40-XO1dM/view?usp=sharing).
+The simulated dataset (results) could be found at [Simulated dataset](https://drive.google.com/file/d/1E_vrYJZMv2-teYR8z4ytU55z4dcNgJRV/view?usp=drive_link).
 
 # Results
 ## Comparison of the distribution of real and simulated data
