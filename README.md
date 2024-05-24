@@ -23,7 +23,7 @@ Our data procession includes preparing a sample with consistent individuals from
 # Structure of Project
 - Collect real-world data: [Microdata Series Current Population Survey dataset](https://cps.ipums.org/cps/)
 
-- Using the Dask framework to clean millions of data points: [Data cleaning](https://github.com/hchen0628/MACS30123-final/tree/main/Data%20cleaning)
+- Using the Dask framework to clean millions of data points: [Data cleaning](https://github.com/hchen0628/MACS30123-final/blob/main/Data%20cleaning/Data%20cleaning.py)
 
 - Generate counterfactual data using real-world datasets
   - WGANs framwork for training and generating data from conditional and joint distributions for the simulation. (Author: Jonas Metzger and Evan Munro): [wgan.py](https://github.com/hchen0628/MACS30123-final/blob/main/WGAN/wgan.py)
