@@ -54,3 +54,4 @@ plt.tight_layout()
 # Save the figure as an image
 plt.savefig('comparison_table.png', dpi=300)
 plt.show()
+plt.close()
