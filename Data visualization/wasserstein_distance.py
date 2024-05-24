@@ -30,7 +30,7 @@ def compare_datasets(path1, path2):
 
 # File paths
 file_gen = r"C:\Users\A1157\Downloads\MACS30123\Xgen_ver2.csv"
-file_orig = r"C:\Users\A1157\Downloads\MACS30123\Xorigin.csv"
+file_orig = r"C:\Users\A1157\Downloads\MACS30123\Xtrue.csv"
 
 # Get results
 result_table = compare_datasets(file_gen, file_orig)
