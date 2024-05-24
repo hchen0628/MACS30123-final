@@ -32,4 +32,4 @@ Our data procession includes preparing a sample with consistent individuals from
 - Data visualization: [Data visualization](https://github.com/hchen0628/MACS30123-final/tree/main/Data%20visualization)
 
 # Data
-Real world data be found at [Microdata Series Current Population Survey dataset](https://cps.ipums.org/cps/), the simulated dataset could be found at [simulated dataset]().
+Real world data be found at [Microdata Series Current Population Survey dataset](https://cps.ipums.org/cps/), the simulated dataset could be found at [Simulated dataset]().
