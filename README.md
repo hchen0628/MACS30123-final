@@ -35,6 +35,8 @@ Our data procession includes preparing a sample with consistent individuals from
 Real world data be found at [Original data](https://drive.google.com/file/d/16A-EKDjXLNHRTqNa1Tb_gmjdt4TRncO-/view?usp=sharing), the simulated dataset could be found at [Simulated dataset]().
 
 # Reference
+## Comparison of the distribution of real and simulated data
+![](https://github.com/hchen0628/MACS30123-final/blob/main/Data%20visualization/Distribution.png)
 
 1. Artuç, E., & McLaren, J. (2015). Trade policy and wage inequality: A structural analysis with occupational and sectoral mobility. *Journal of International Economics, 97*(2), 278-294. [https://doi.org/10.1016/j.jinteco.2015.07.005](https://doi.org/10.1016/j.jinteco.2015.07.005)
 
