@@ -33,3 +33,17 @@ Our data procession includes preparing a sample with consistent individuals from
 
 # Data
 Real world data be found at [Original data](https://drive.google.com/file/d/16A-EKDjXLNHRTqNa1Tb_gmjdt4TRncO-/view?usp=sharing), the simulated dataset could be found at [Simulated dataset]().
+
+# Results
+## Comparison of the distribution of real and simulated data
+![](https://github.com/hchen0628/MACS30123-final/blob/main/Data%20visualization/Distribution.png)
+
+# References
+1. Artuç, E., & McLaren, J. (2015). Trade policy and wage inequality: A structural analysis with occupational and sectoral mobility. *Journal of International Economics, 97*(2), 278-294. [https://doi.org/10.1016/j.jinteco.2015.07.005](https://doi.org/10.1016/j.jinteco.2015.07.005)
+
+2. Autor, D. H., Dorn, D., & Hanson, G. H. (2013). The China syndrome: Local labor market effects of import competition in the United States. *American Economic Review, 103*(6), 2121-2168. [https://doi.org/10.1257/aer.103.6.2121](https://doi.org/10.1257/aer.103.6.2121)
+
+3. Athey, S., Imbens, G. W., Metzger, J., & Munro, E. (2021). Using Wasserstein Generative Adversarial Networks for the design of Monte Carlo simulations. *Journal of Econometrics*. [https://doi.org/10.1016/j.jeconom.2021.105076](https://doi.org/10.1016/j.jeconom.2021.105076)
+
+4. Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein Generative Adversarial Networks. In *International Conference on Machine Learning* (pp. 214-223). PMLR. [http://proceedings.mlr.press/v70/arjovsky17a.html](http://proceedings.mlr.press/v70/arjovsky17a.html)
+
