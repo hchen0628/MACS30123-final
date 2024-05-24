@@ -21,7 +21,7 @@ Our data procession includes preparing a sample with consistent individuals from
 - The WGAN model requires substantial computational resources and memory, relying on GPUs and specialized parallel processing techniques to perform complex mathematical calculations. Performing such operations in a local computing environment can be resource-intensive and time-consuming. Particularly, we utilize Torch to optimize memory usage and accelerate the training process during model training, which implies higher demands on computing resources. Deploying this WGAN model on a cloud computing cluster can fully leverage computing resources and parallel processing capabilities, significantly improving the speed and efficiency of model training.
 
 # Structure of Project
-- Collect real-world data: []()
+- Collect real-world data: [Microdata Series Current Population Survey dataset](https://cps.ipums.org/cps/)
 
 - Using the Dask framework to clean millions of data points: []()
 
